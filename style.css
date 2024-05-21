@@ -1,0 +1,27 @@
+/* Resetting default browser styles */
+html,
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting up basic styles */
+body {
+  font-family: "brother-1816", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
