@@ -74,6 +74,21 @@ p {
   padding: 6rem 0 6rem 0;
 }
 
+.btn-outline-primary {
+  border-color: #9a1e21;
+  color: white;
+}
+
+.btn-outline-primary:hover {
+  background-color: #9a1e21;
+  border-color: #9a1e21;
+}
+
+a.text-secondary:focus,
+a.text-secondary:hover {
+  color: #91989f !important;
+}
+
 /* ----------------------------------------------------------------------- HELPERS */
 
 .btn-pill {
@@ -84,8 +99,24 @@ p {
   font-size: 13px;
 }
 
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
 .ls-1 {
   letter-spacing: 0.05rem;
+}
+
+.gap-1 {
+  grid-gap: 1rem;
+}
+
+.bg-lt-black {
+  background-color: #222222;
 }
 
 /* ----------------------------------------------------------------------- HOME HERO */
