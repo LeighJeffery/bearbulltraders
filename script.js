@@ -19,3 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var currentYear = new Date().getFullYear();
   document.getElementById("current-year").textContent = currentYear;
 });
+
+const myCarouselElement = document.querySelector("#homeCarousel");
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+  touch: false,
+});

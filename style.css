@@ -119,6 +119,12 @@ a.text-secondary:hover {
   background-color: #222222;
 }
 
+.container-inner {
+  width: 100%;
+  max-width: 95vw;
+  margin: 0 auto;
+}
+
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/large_group_nyc_bearbulltraders_bw.png");
@@ -134,4 +140,24 @@ section.hero {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* ------------------------------------------------------------------------- HERO FORM */
+._form_47 ._dark {
+  background: transparent !important;
+}
+
+.home-hero-form label._form-label {
+  display: none !important;
+}
+
+.home-hero-form ._form-content {
+  display: flex;
+  align-items: center;
+}
+
+input#email {
+  border-radius: 5px 0 0 5px !important;
+  width: 460px !important;
+  margin-top: 0;
 }
