@@ -123,7 +123,7 @@ a.text-secondary:hover {
 }
 
 .gap-1 {
-  grid-gap: 1rem;
+  grid-gap: 1rem !important;
 }
 
 .bg-lt-black {
