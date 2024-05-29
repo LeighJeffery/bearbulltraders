@@ -164,7 +164,7 @@ section.hero {
 }
 
 /* ------------------------------------------------------------------------- HERO FORM */
-._form_47 ._dark {
+._form_47._dark {
   background: transparent !important;
 }
 
@@ -179,7 +179,7 @@ section.hero {
 
 input#email {
   border-radius: 5px 0 0 5px !important;
-  width: 460px !important;
+
   margin-top: 0;
 }
 
