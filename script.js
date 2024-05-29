@@ -14,6 +14,13 @@ fetch("footer.html")
     document.getElementById("footer").innerHTML = data;
   });
 
+// Fetch and insert moderator section
+fetch("moderators.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("moderators").innerHTML = data;
+  });
+
 // keeps footer copyright up to date //
 document.addEventListener("DOMContentLoaded", function () {
   var currentYear = new Date().getFullYear();

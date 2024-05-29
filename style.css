@@ -136,7 +136,7 @@ a.text-secondary:hover {
 
 .container-inner {
   width: 100%;
-  max-width: 90vw;
+  max-width: 70vw;
   margin: 0 auto;
 }
 
@@ -144,21 +144,23 @@ a.text-secondary:hover {
   font-size: 51px !important;
 }
 
+.fit-cover {
+  object-fit: cover;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.mt-min-30 {
+  margin-top: -30px;
+}
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
-  background-image: url("/images/large_group_nyc_bearbulltraders_bw.png");
+  background-image: url("/images/large_group_nyc_bearbulltraders_bw-overlay.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* ------------------------------------------------------------------------- HERO FORM */
@@ -190,4 +192,12 @@ button.carousel-control-prev {
 
 .carousel-inner {
   border-radius: 20px;
+}
+
+/* ----------------------------------------------------------------------------- MENTORS */
+section.mentors {
+  background-image: url("/images/group-background_-_.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
