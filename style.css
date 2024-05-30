@@ -10,7 +10,7 @@ p {
 /* Setting up basic styles */
 body {
   font-family: "brother-1816", sans-serif;
-  background-color: #f0f0f0;
+  background-color: white;
   color: black;
   line-height: 1.6;
 }
@@ -47,6 +47,15 @@ p {
 
 .btn-primary:hover {
   background: #cb0000;
+}
+
+.btn-outline-primary {
+  color: #9a1e21 !important;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  color: white !important;
 }
 
 .bg-black {
@@ -92,6 +101,10 @@ a.text-secondary:hover {
 /* ----------------------------------------------------------------------- HELPERS */
 .text-bbt-red {
   color: #9a1e21;
+}
+
+.bg-lt-grey {
+  background: #f7f7f7;
 }
 
 .border-bbt-red {

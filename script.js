@@ -27,9 +27,23 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("current-year").textContent = currentYear;
 });
 
-// Fetch and insert moderator section
+// Fetch and insert psychology section
 fetch("psychology-section.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("psychology-section").innerHTML = data;
+  });
+
+// Fetch and insert award tape section
+fetch("awards-tape.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("awards-tape").innerHTML = data;
+  });
+
+// Fetch and insert price chart section
+fetch("price-chart.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("price-chart").innerHTML = data;
   });
