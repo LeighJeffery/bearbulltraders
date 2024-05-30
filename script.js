@@ -26,3 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var currentYear = new Date().getFullYear();
   document.getElementById("current-year").textContent = currentYear;
 });
+
+// Fetch and insert moderator section
+fetch("psychology-section.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("psychology-section").innerHTML = data;
+  });
