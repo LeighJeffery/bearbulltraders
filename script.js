@@ -47,3 +47,10 @@ fetch("price-chart.html")
   .then((data) => {
     document.getElementById("price-chart").innerHTML = data;
   });
+
+// Fetch and insert compare chart section
+fetch("compare.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("compare").innerHTML = data;
+  });

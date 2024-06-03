@@ -1,11 +1,4 @@
 /* Resetting default browser styles */
-html,
-body,
-h1,
-p {
-  margin: 0;
-  padding: 0 !important ;
-}
 
 /* Setting up basic styles */
 body {
@@ -98,7 +91,20 @@ a.text-secondary:hover {
   color: #91989f !important;
 }
 
+.btn-outline-dark:hover {
+  background-color: #9a1e21;
+  border-color: #9a1e21;
+}
+
 /* ----------------------------------------------------------------------- HELPERS */
+.bg-bbt-red {
+  background: #9a1e21;
+}
+
+.fs-small {
+  font-size: 13px;
+}
+
 .text-bbt-red {
   color: #9a1e21;
 }
@@ -149,7 +155,7 @@ a.text-secondary:hover {
 
 .container-inner {
   width: 100%;
-  max-width: 70vw;
+  max-width: 75vw;
   margin: 0 auto;
 }
 
@@ -167,6 +173,10 @@ a.text-secondary:hover {
 
 .mt-min-30 {
   margin-top: -30px;
+}
+
+.rounded-4-top {
+  border-radius: 1rem 1rem 0 0;
 }
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
@@ -213,4 +223,10 @@ section.mentors {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
+}
+
+/* ------------------------------------------------------------------------------- PRICE CHART */
+.bi-check-lg::before,
+.bi-x::before {
+  font-weight: 800 !important;
 }
