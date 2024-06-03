@@ -97,6 +97,11 @@ a.text-secondary:hover {
 }
 
 /* ----------------------------------------------------------------------- HELPERS */
+.wrapper {
+  max-width: 54vw !important;
+  width: 100%;
+}
+
 .bg-bbt-red {
   background: #9a1e21;
 }
@@ -206,6 +211,15 @@ input#email {
   margin-top: 0;
 }
 
+/* -------------------------------------------------------------------------- FOOTER */
+.container-fluid.footer-top-img {
+  background-image: url(/images/summit-vancouver_2.webp);
+  background-size: cover;
+  padding: 15rem 0;
+  height: 100%;
+  background-position: center;
+}
+
 /*---------------------------------------------------------------------------- CAROUSEL */
 button.carousel-control-next,
 button.carousel-control-prev {
@@ -229,4 +243,274 @@ section.mentors {
 .bi-check-lg::before,
 .bi-x::before {
   font-weight: 800 !important;
+}
+
+/* -------------------------------------------------------------------------------- BOOK ROW */
+.book-row-item {
+  height: 200px;
+  width: fit-content;
+}
+
+/* ------------------------------------------------------ COMPARE CHART */
+.bbt-badges-table-align {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 33% 21.5% 23.5% 21.5%;
+  margin: 0 auto 32px !important;
+}
+
+hr.bbt-member-table-top-line {
+  position: absolute;
+  width: 100%;
+  top: 25px;
+  border-color: #eaecf0 !important;
+  box-shadow: none !important;
+  z-index: -9;
+}
+
+tr.bbt-intro-tbody-tr.view:hover {
+  opacity: 0.8;
+}
+
+table,
+table.bbt-intro-course {
+  width: 100%;
+}
+
+table.fold-table tbody tr.view td,
+table.fold-table tbody tr.view th {
+  cursor: pointer;
+}
+
+table.fold-table tbody tr.view td:first-child,
+table.fold-table tbody tr.view th:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+
+table.fold-table tbody tr.view td:first-child:before,
+table.fold-table tbody tr.view th:first-child:before {
+  position: absolute;
+  font-family: "bootstrap-icons";
+  font-size: 16px;
+  color: #999999;
+  content: "\f286";
+  transition: all 0.3s ease;
+  left: 24px;
+  font-weight: 800;
+  top: 16px;
+}
+
+table.fold-table tbody tr.view:nth-child(4n-1) {
+  background: #eee;
+}
+
+img.bbt-table-course-title-icon {
+  width: 24px;
+  height: 24px;
+}
+
+table.fold-table tbody tr.view.open td:first-child:before {
+  transform: rotate(-180deg);
+  color: #333;
+  top: 17px;
+}
+
+table.fold-table tbody tr.fold {
+  display: none;
+}
+
+table.fold-table tbody tr.fold.open {
+  display: table-row;
+}
+
+.fold-content-time-block {
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+  background: #ddd;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+p.fold-content-time-title {
+  font-size: 15px !important;
+  color: #666;
+  padding: 0;
+}
+
+td.fold-content-td {
+  padding: 0 !important;
+}
+
+.fold-description {
+  padding-top: 20px;
+}
+
+.fold-description p {
+  font-size: 17px !important;
+  font-weight: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+.fold-description ul {
+  list-style: none !important;
+}
+
+.fold-description li span {
+  font-weight: 700;
+}
+
+.fold-description li {
+  font-size: 17px;
+  line-height: 1.8rem;
+}
+
+span.fold-bold {
+  font-weight: bold;
+}
+
+table.bbt-intro-course {
+  width: 100%;
+  border-collapse: collapse !important;
+  margin: 0 auto;
+}
+
+img.bbt-th-badge {
+  margin: 11px 0 0 0 !important;
+}
+
+th.bbt-intro-course-th:first-child {
+  padding: 5px 13px 5px !important;
+  align-items: center;
+  background: transparent;
+  margin: 0 auto;
+}
+
+/*badges*/
+th.bbt-intro-course-th h3 {
+  position: relative;
+}
+
+th.bbt-intro-course-th {
+  color: white;
+  text-align: left;
+  max-height: 21px;
+  border-radius: 5px 5px 0 0;
+}
+
+td.bbt-td-button a {
+  background: white;
+  font-size: 14px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: block;
+  letter-spacing: 0 !important;
+  color: black;
+  padding: 4.8px 1rem;
+  border: 1px solid #000000;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 164px;
+  margin: 0 auto !important;
+}
+
+td.bbt-td-button a:hover,
+td.bbt-td-button a:focus {
+  background: #9a1d21;
+  border: #9a1d21;
+}
+
+a.btn-memberhip-selected {
+  background: #991e20 !important;
+  color: white !important;
+  border: #991e20 !important;
+}
+
+a.btn-memberhip-selected:hover {
+  background: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+.bbt-td-button a:hover,
+.bbt-td-button a:focus {
+  color: white;
+}
+
+.inline {
+  display: flex;
+  align-items: baseline;
+}
+
+h3 .center {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.bbt-under-icon p {
+  margin-top: -33px;
+  margin-left: -10px;
+  text-transform: uppercase;
+  font-size: 13px !important;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+}
+
+h5 {
+  margin: 0;
+  letter-spacing: 0;
+}
+
+h5.bbt-table-course-title {
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  margin-left: 35px;
+  color: black;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+th.bbt-intro-course-th h3 {
+  color: black;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+td.bbt-td-no-background {
+  border: none !important;
+  padding-top: 40px !important;
+  padding-bottom: 20px !important;
+  background-color: transparent;
+}
+
+table.bbt-intro-course td {
+  background: transparent;
+  border-radius: 0;
+  padding: 11px;
+  border-bottom: 1px solid #ddd;
+}
+
+i.fa.fa-check {
+  color: #36d767;
+  font-size: 14px;
+}
+
+i.fa.fa-times {
+  color: #b62d27;
+  font-size: 15px;
 }
