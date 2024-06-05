@@ -271,3 +271,107 @@ section.mentors {
 .bi-chevron-up::before {
   font-weight: 800 !important;
 }
+
+/* ------------------------------------------------------ COMPARE CHART */
+.bbt-badges-table-align {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 33% 21.5% 23.5% 21.5%;
+  margin: 0 auto 32px !important;
+}
+
+tr.bbt-intro-tbody-tr.view:hover {
+  opacity: 0.8;
+}
+
+table,
+table.bbt-intro-course {
+  width: 100%;
+}
+
+table.fold-table tbody tr.view td,
+table.fold-table tbody tr.view th {
+  cursor: pointer;
+}
+
+table.fold-table tbody tr.view td:first-child,
+table.fold-table tbody tr.view th:first-child {
+  position: relative;
+  padding-left: 20px;
+}
+
+table.fold-table tbody tr.view td:first-child:before,
+table.fold-table tbody tr.view th:first-child:before {
+  position: absolute;
+  font-family: "bootstrap-icons";
+  font-size: 16px;
+  color: #999999;
+  content: "\f286";
+  transition: all 0.3s ease;
+  left: 24px;
+  font-weight: 800;
+}
+
+table.fold-table tbody tr.view.open td:first-child:before {
+  transform: rotate(-180deg);
+  color: #333;
+  top: 17px;
+}
+
+table.fold-table tbody tr.fold {
+  display: none;
+}
+
+table.fold-table tbody tr.fold.open {
+  display: table-row;
+}
+
+table.bbt-intro-course {
+  width: 100%;
+  border-collapse: collapse !important;
+  margin: 0 auto;
+}
+
+img.bbt-th-badge {
+  margin: 11px 0 0 0 !important;
+}
+
+th.bbt-intro-course-th h3 {
+  position: relative;
+}
+
+th.badge {
+  position: absolute;
+  top: 0;
+}
+
+h5.bbt-table-course-title {
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  margin-left: 35px;
+  color: black;
+  display: flex;
+  align-items: center;
+  grid-gap: 10px;
+}
+th.bbt-intro-course-th h3 {
+  color: black;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+td.bbt-td-no-background {
+  border: none !important;
+  padding-top: 40px !important;
+  padding-bottom: 20px !important;
+  background-color: transparent;
+}
+
+table.bbt-intro-course td {
+  background: transparent;
+  border-radius: 0;
+  padding: 11px;
+  border-bottom: 1px solid #ddd;
+}

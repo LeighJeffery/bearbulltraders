@@ -68,3 +68,44 @@ fetch("books-row.html")
   .then((data) => {
     document.getElementById("books-row").innerHTML = data;
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  var foldRows = document.querySelectorAll(".fold-table tr.view");
+  var openAccordion = null;
+
+  for (var i = 0; i < foldRows.length; i++) {
+    foldRows[i].addEventListener("click", function () {
+      // Check if this accordion is already open
+      var isOpen = this.classList.contains("open");
+
+      // Close any previously open accordion, if it's not the same as the clicked one
+      if (openAccordion !== null && openAccordion !== this) {
+        openAccordion.classList.remove("open");
+        var foldRow = openAccordion.nextElementSibling;
+        if (foldRow.classList.contains("fold")) {
+          foldRow.classList.remove("open");
+          foldRow.style.backgroundColor = ""; // Reset background color
+        }
+      }
+
+      // Toggle the clicked accordion
+      this.classList.toggle("open");
+      var foldRow = this.nextElementSibling;
+      if (foldRow.classList.contains("fold")) {
+        foldRow.classList.toggle("open");
+
+        // Set background color for the clicked row
+        foldRow.style.backgroundColor = foldRow.classList.contains("open")
+          ? "white"
+          : "";
+      }
+
+      // Update the openAccordion variable
+      if (!isOpen) {
+        openAccordion = this;
+      } else {
+        openAccordion = null;
+      }
+    });
+  }
+});
