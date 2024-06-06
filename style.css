@@ -248,6 +248,15 @@ button.carousel-control-prev {
   border-radius: 20px;
 }
 
+.carousel-caption {
+  left: 0;
+  padding-top: 1rem;
+  padding-bottom: 2.25rem;
+  background: black;
+  right: 0;
+  bottom: 0;
+}
+
 /* ----------------------------------------------------------------------------- MENTORS */
 section.mentors {
   background-image: url("/images/group-background_-_.png");
