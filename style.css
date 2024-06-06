@@ -199,6 +199,7 @@ a.text-secondary:hover {
 .position-center {
   object-position: center !important;
 }
+
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/large_group_nyc_bearbulltraders_bw-overlay.png");
