@@ -205,6 +205,7 @@ a.text-secondary:hover {
   height: 450px;
   object-fit: cover;
 }
+
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/large_group_nyc_bearbulltraders_bw-overlay.png");
@@ -382,4 +383,33 @@ table.bbt-intro-course td {
   border-radius: 0;
   padding: 11px;
   border-bottom: 1px solid #ddd;
+}
+
+/* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
+@media (min-width: 2300px) {
+  .container-inner {
+    max-width: 60vw;
+  }
+}
+
+@media (max-width: 1700px) {
+  .container-inner {
+    max-width: 100vw;
+  }
+
+  .wrapper {
+    max-width: 75vw !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 100vw !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .py-6 {
+    padding: 2rem 0 2rem 0;
+  }
 }
