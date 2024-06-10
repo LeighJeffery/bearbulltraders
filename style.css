@@ -385,6 +385,15 @@ table.bbt-intro-course td {
   border-bottom: 1px solid #ddd;
 }
 
+/* ---------------------------------------------------------------------------------------- ACCORDION */
+.accordion-button:not(.collapsed) {
+  background-color: #cfe2ff00;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
 @media (min-width: 2300px) {
   .container-inner {
