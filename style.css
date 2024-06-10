@@ -200,6 +200,11 @@ a.text-secondary:hover {
   object-position: center !important;
 }
 
+.img-square {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/large_group_nyc_bearbulltraders_bw-overlay.png");
@@ -209,25 +214,9 @@ section.hero {
 }
 
 /* ------------------------------------------------------------------------- HERO FORM */
-._form_47._dark {
-  background: transparent !important;
-}
-
-.home-hero-form label._form-label {
-  display: none !important;
-}
-
-.home-hero-form ._form-content {
-  display: flex;
-  align-items: center;
-}
-
 input#email {
-  border-radius: 5px 0 0 5px !important;
-
-  margin-top: 0;
+  padding: 13px !important;
 }
-
 /* -------------------------------------------------------------------------- FOOTER */
 .container-fluid.footer-top-img {
   background-image: url(/images/summit-vancouver_2.webp);
@@ -237,7 +226,7 @@ input#email {
   background-position: center;
 }
 
-/*---------------------------------------------------------------------------- CAROUSEL */
+/*---------------------------------------------------------------------------- CAROUSELS */
 button.carousel-control-next,
 button.carousel-control-prev {
   border: none;
@@ -255,6 +244,15 @@ button.carousel-control-prev {
   background: black;
   right: 0;
   bottom: 0;
+}
+
+.carousel-testimonial-controls {
+  position: absolute;
+  width: 250px;
+  display: flex;
+  right: 21%;
+  bottom: 0;
+  gap: 10px;
 }
 
 /* ----------------------------------------------------------------------------- MENTORS */

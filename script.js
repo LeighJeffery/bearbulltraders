@@ -69,6 +69,14 @@ fetch("books-row.html")
     document.getElementById("books-row").innerHTML = data;
   });
 
+// Fetch and insert testimonials section
+fetch("testimonials.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("testimonials").innerHTML = data;
+  });
+
+// table accordions //
 document.addEventListener("DOMContentLoaded", function () {
   var foldRows = document.querySelectorAll(".fold-table tr.view");
   var openAccordion = null;
