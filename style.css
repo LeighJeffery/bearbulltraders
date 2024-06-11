@@ -248,6 +248,10 @@ a.text-secondary:hover {
 .g-10 {
   gap: 10rem;
 }
+
+.fs-7 {
+  font-size: 13px;
+}
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
@@ -498,9 +502,17 @@ table.bbt-chat-check-schedule tr td {
   padding: 0 !important;
 }
 
-/* ------------------------------------------------------------------------- TECH */
+/* ------------------------------------------------------------------------- BIG SIDE IMAGES */
 .community-setup-right-img {
   background-image: url(/images/photos/image-31-1.webp);
+  background-size: cover;
+  padding: 15rem 0;
+  height: 100%;
+  background-position: center;
+}
+
+.brian-newsletter-img {
+  background-image: url(/images/photos/Right-1.webp);
   background-size: cover;
   padding: 15rem 0;
   height: 100%;
