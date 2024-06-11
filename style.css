@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 40px;
   margin-bottom: 0.5rem;
 }
 
@@ -25,6 +25,11 @@ h2 {
 
 .subtitle {
   font-size: 28px;
+}
+
+.subtext {
+  font-size: 20px;
+  line-height: 2rem;
 }
 
 p {
@@ -104,6 +109,7 @@ a.text-secondary:hover {
 .wrapper {
   max-width: 54vw !important;
   width: 100%;
+  margin: 0 auto;
 }
 
 .bg-bbt-red {
@@ -164,7 +170,7 @@ a.text-secondary:hover {
 
 .container-inner {
   width: 100%;
-  max-width: 75vw;
+  max-width: 78vw;
   margin: 0 auto;
 }
 
@@ -206,9 +212,25 @@ a.text-secondary:hover {
   object-fit: cover;
 }
 
+.neg-mt-70 {
+  margin-top: -70px;
+}
+
+.fs-mini {
+  font-size: 13px;
+}
+
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/large_group_nyc_bearbulltraders_bw-overlay.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* -------------------------------------------------------------------------- CHATR HERO */
+section.chatroom-hero {
+  background-image: url("/images/backgrounds/Hero-4.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -274,11 +296,6 @@ section.mentors {
 .book-row-item {
   height: 200px;
   width: fit-content;
-}
-
-/* ------------------------------------------------------ COMPARE CHART */
-.bi-chevron-up::before {
-  font-weight: 800 !important;
 }
 
 /* ------------------------------------------------------ COMPARE CHART */
@@ -392,6 +409,58 @@ table.bbt-intro-course td {
 
 .accordion-button:focus {
   box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------------------- CHATROOM SCHEDULE */
+
+table.bbt-chat-schedule-table {
+  max-width: 1060px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+table.bbt-chat-schedule-table td {
+  padding: 32px 0 !important;
+  text-align: left;
+  font-size: 16px;
+}
+
+table.bbt-chat-schedule-table tr {
+  border-bottom: 1px solid;
+}
+
+td.bbt-chat-scheudle-table-name {
+  padding: 30px 0 !important;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+td.bbt-chat-schedule-table-time {
+  font-weight: 400 !important;
+  color: #666;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+span.bbt-chat-sched-red {
+  color: #991e20;
+  display: block;
+  font-style: italic;
+}
+
+.bbt-chat-check-schedule th {
+  font-size: 13px;
+}
+
+/* --------------------------------------------CHATROOM SCHEDULE CHECKS */
+table.bbt-chat-check-schedule tr {
+  border-bottom: none;
+}
+
+table.bbt-chat-check-schedule tr td {
+  padding: 0 !important;
 }
 
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
