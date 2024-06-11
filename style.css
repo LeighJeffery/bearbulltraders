@@ -244,6 +244,10 @@ a.text-secondary:hover {
 .h-318 {
   height: 318px;
 }
+
+.g-10 {
+  gap: 10rem;
+}
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
@@ -501,6 +505,18 @@ table.bbt-chat-check-schedule tr td {
   padding: 15rem 0;
   height: 100%;
   background-position: center;
+}
+
+/* -------------------------------------------------------------------------------------- EDUCATION PG */
+hr.dotted-path-line {
+  border: none;
+  border-top: 3px dashed #999;
+  position: absolute;
+  width: 100%;
+  z-index: -9;
+  top: 31px;
+  right: 151px;
+  max-width: 1226px;
 }
 
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
