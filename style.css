@@ -23,6 +23,12 @@ h2 {
   font-weight: 800;
 }
 
+.sub-page-title {
+  font-size: 68px;
+  font-weight: 800;
+  line-height: 100px;
+}
+
 .subtitle {
   font-size: 28px;
 }
@@ -222,15 +228,22 @@ a.text-secondary:hover {
 
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
-  background-image: url("/images/large_group_nyc_bearbulltraders_bw-overlay.png");
+  background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
 
-/* -------------------------------------------------------------------------- CHATR HERO */
+/* -------------------------------------------------------------------------- SECONDARY PAGE HEROS */
 section.chatroom-hero {
   background-image: url("/images/backgrounds/Hero-4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+section.technology-hero {
+  background-image: url("/images/backgrounds/Hero-tech.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -242,7 +255,7 @@ input#email {
 }
 /* -------------------------------------------------------------------------- FOOTER */
 .container-fluid.footer-top-img {
-  background-image: url(/images/summit-vancouver_2.webp);
+  background-image: url(/images/backgrounds/summit-vancouver_2.webp);
   background-size: cover;
   padding: 15rem 0;
   height: 100%;
@@ -280,7 +293,7 @@ button.carousel-control-prev {
 
 /* ----------------------------------------------------------------------------- MENTORS */
 section.mentors {
-  background-image: url("/images/group-background_-_.png");
+  background-image: url("/images/backgrounds/group-background_-_.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -477,6 +490,12 @@ table.bbt-chat-check-schedule tr td {
 
   .wrapper {
     max-width: 75vw !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-xl-50 {
+    width: 50% !important;
   }
 }
 

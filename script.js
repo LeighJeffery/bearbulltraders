@@ -76,6 +76,13 @@ fetch("testimonials.html")
     document.getElementById("testimonials").innerHTML = data;
   });
 
+// Fetch and insert newsletter cta section
+fetch("newsletter-cta.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("newsletter").innerHTML = data;
+  });
+
 // table accordions //
 document.addEventListener("DOMContentLoaded", function () {
   var foldRows = document.querySelectorAll(".fold-table tr.view");
