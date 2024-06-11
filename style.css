@@ -241,6 +241,9 @@ a.text-secondary:hover {
   height: 800px;
 }
 
+.h-318 {
+  height: 318px;
+}
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
