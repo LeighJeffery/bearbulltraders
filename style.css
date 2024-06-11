@@ -88,7 +88,13 @@ p {
 }
 
 .py-6 {
-  padding: 6rem 0 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .btn-outline-primary {
@@ -148,6 +154,11 @@ a.text-secondary:hover {
 
 .fs-13 {
   font-size: 13px;
+}
+
+.mh-50 {
+  max-height: 50px;
+  height: 100%;
 }
 
 .fs-14 {
@@ -224,6 +235,10 @@ a.text-secondary:hover {
 
 .fs-mini {
   font-size: 13px;
+}
+
+.h-800 {
+  height: 800px;
 }
 
 /* ----------------------------------------------------------------------- HOME HERO */
@@ -474,6 +489,15 @@ table.bbt-chat-check-schedule tr {
 
 table.bbt-chat-check-schedule tr td {
   padding: 0 !important;
+}
+
+/* ------------------------------------------------------------------------- TECH */
+.community-setup-right-img {
+  background-image: url(/images/photos/image-31-1.webp);
+  background-size: cover;
+  padding: 15rem 0;
+  height: 100%;
+  background-position: center;
 }
 
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
