@@ -83,8 +83,17 @@ fetch("newsletter-cta.html")
     document.getElementById("newsletter").innerHTML = data;
   });
 
-// table accordions //
-document.addEventListener("DOMContentLoaded", function () {
+// Fetch and insert compare chart section
+fetch("compare.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("compare-chart").innerHTML = data;
+    initializeAccordion(); // Reinitialize the accordion functionality
+  });
+
+// Function to initialize accordion functionality
+function initializeAccordion() {
+  // table accordions //
   var foldRows = document.querySelectorAll(".fold-table tr.view");
   var openAccordion = null;
 
@@ -123,4 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
-});
+}
+
+// Run the accordion initialization on initial load
+document.addEventListener("DOMContentLoaded", initializeAccordion);
