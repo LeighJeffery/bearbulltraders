@@ -275,6 +275,20 @@ section.technology-hero {
   background-attachment: scroll;
 }
 
+section.webinar-hero {
+  background-image: url("/images/backgrounds/Hero-6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+section.psychology-hero {
+  background-image: url("/images/backgrounds/Hero-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
 /* ------------------------------------------------------------------------- HERO FORM */
 input#email {
   padding: 13px !important;
