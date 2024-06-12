@@ -43,6 +43,10 @@ p {
   margin-bottom: 0.5rem;
 }
 
+.pt-3-5 {
+  padding-top: 1.5rem !important;
+}
+
 /* ---------------------------------------------------------------------- BOOTSTRAP OVERRIDES */
 .btn-primary {
   background: #9a1e21;
