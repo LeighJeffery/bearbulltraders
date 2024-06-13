@@ -264,10 +264,18 @@ a.text-secondary:hover {
 .grow-sm {
   transition: all 0.2s ease-in-out;
 }
+
 .grow-sm:hover {
   transform: scale(1.01);
 }
 
+.shake {
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.shake:hover {
+  animation: shake 0.3s ease-in-out !important;
+}
 /* ----------------------------------------------------------------------- HOME HERO */
 section.hero {
   background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
