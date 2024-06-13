@@ -305,6 +305,13 @@ section.psychology-hero {
   background-attachment: scroll;
 }
 
+section.testimonials-hero {
+  background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
 /* -------------------------------------------------------------------------- FOOTER */
 .container-fluid.footer-top-img {
   background-image: url(/images/backgrounds/summit-vancouver_2.webp);
