@@ -91,6 +91,14 @@ fetch("compare.html")
     initializeAccordion(); // Reinitialize the accordion functionality
   });
 
+// Fetch and insert newsletter form 61
+fetch("newsletter-form.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("home-hero-form").innerHTML = data;
+    initializeAccordion(); // Reinitialize the accordion functionality
+  });
+
 // Function to initialize accordion functionality
 function initializeAccordion() {
   // table accordions //

@@ -293,10 +293,6 @@ section.psychology-hero {
   background-attachment: scroll;
 }
 
-/* ------------------------------------------------------------------------- HERO FORM */
-input#email {
-  padding: 13px !important;
-}
 /* -------------------------------------------------------------------------- FOOTER */
 .container-fluid.footer-top-img {
   background-image: url(/images/backgrounds/summit-vancouver_2.webp);
