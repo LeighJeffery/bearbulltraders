@@ -70,10 +70,10 @@ fetch("books-row.html")
   });
 
 // Fetch and insert testimonials section
-fetch("testimonials.html")
+fetch("testimonial-section.html")
   .then((response) => response.text())
   .then((data) => {
-    document.getElementById("testimonials").innerHTML = data;
+    document.getElementById("testimonial-section").innerHTML = data;
   });
 
 // Fetch and insert newsletter cta section
