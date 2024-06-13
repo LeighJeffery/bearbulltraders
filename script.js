@@ -96,7 +96,13 @@ fetch("newsletter-form.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("home-hero-form").innerHTML = data;
-    initializeAccordion(); // Reinitialize the accordion functionality
+  });
+
+// Fetch and insert GDPR POP
+fetch("cookie-pop.html")
+  .then((response) => response.text())
+  .then((data) => {
+    document.getElementById("gpdr-pop").innerHTML = data;
   });
 
 // Function to initialize accordion functionality

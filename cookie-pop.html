@@ -1,0 +1,40 @@
+<section class="gpdr-pop">
+  <div class="container my-5">
+    <h1>Welcome to Bear Bull Traders</h1>
+    <p>Your content goes here...</p>
+  </div>
+
+  <div class="gdpr-popup" id="gdpr-popup">
+    <h5>We use cookies</h5>
+    <p>
+      We use cookies to enhance your experience on our website. By continuing to
+      browse, you consent to our use of cookies. Learn more in our
+      <a href="/privacy-policy.html" target="_blank">Privacy Policy</a>.
+    </p>
+    <button class="btn btn-primary btn-sm" id="accept-cookies">Accept</button>
+    <button class="btn btn-secondary btn-sm" id="decline-cookies">
+      Decline
+    </button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var gdprPopup = document.getElementById("gdpr-popup");
+      var acceptButton = document.getElementById("accept-cookies");
+      var declineButton = document.getElementById("decline-cookies");
+
+      if (!localStorage.getItem("gdprAccepted")) {
+        gdprPopup.style.display = "block";
+      }
+
+      acceptButton.addEventListener("click", function () {
+        localStorage.setItem("gdprAccepted", "true");
+        gdprPopup.style.display = "none";
+      });
+
+      declineButton.addEventListener("click", function () {
+        gdprPopup.style.display = "none";
+      });
+    });
+  </script>
+</section>
