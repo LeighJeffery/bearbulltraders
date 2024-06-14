@@ -718,11 +718,15 @@ hr.dotted-path-line {
   }
 }
 
+@media (min-width: 769px) {
+}
+
 @media (max-width: 768px) {
   .py-6 {
     padding: 2rem 0 2rem 0;
   }
-  .btn-pill {
-    white-space: nowrap;
+
+  iframe {
+    max-width: fit-content;
   }
 }
