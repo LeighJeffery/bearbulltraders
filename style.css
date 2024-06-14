@@ -120,13 +120,6 @@ a.text-secondary:hover {
 }
 
 /* ----------------------------------------------------------------------- HELPERS */
-.wrapper {
-  max-width: 54vw !important;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
 
 .bg-bbt-red {
   background: #9a1e21;
@@ -187,6 +180,13 @@ a.text-secondary:hover {
 
 .text-lt-black {
   color: #303030;
+}
+.wrapper {
+  max-width: 54vw !important;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
 .container-inner {
@@ -303,6 +303,13 @@ section.chatroom-hero {
 
 section.technology-hero {
   background-image: url("/images/backgrounds/Hero-tech.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+section.education-hero {
+  background-image: url("/images/backgrounds/Hero-edu.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -679,6 +686,10 @@ hr.dotted-path-line {
   }
   .mt-min-30 {
     margin-top: 10px;
+  }
+  .sub-page-title {
+    font-size: 34px;
+    line-height: 53px;
   }
 }
 
