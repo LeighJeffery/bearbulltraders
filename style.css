@@ -674,9 +674,19 @@ hr.dotted-path-line {
   }
 }
 
+@media (max-width: 1500px) {
+  hr.dotted-path-line {
+    display: none;
+  }
+}
+
 @media (min-width: 1200px) {
   .w-xl-50 {
     width: 50% !important;
+  }
+
+  .w-xl-75 {
+    width: 70% !important;
   }
 }
 
@@ -690,6 +700,9 @@ hr.dotted-path-line {
   .sub-page-title {
     font-size: 34px;
     line-height: 53px;
+  }
+  .h-800 {
+    height: fit-content;
   }
 }
 
@@ -708,5 +721,8 @@ hr.dotted-path-line {
 @media (max-width: 768px) {
   .py-6 {
     padding: 2rem 0 2rem 0;
+  }
+  .btn-pill {
+    white-space: nowrap;
   }
 }
