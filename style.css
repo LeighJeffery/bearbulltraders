@@ -738,3 +738,14 @@ hr.dotted-path-line {
     max-width: fit-content;
   }
 }
+
+@media (max-width: 576px) {
+  .carousel-testimonial-controls {
+    display: none;
+  }
+  .img-square {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+}
