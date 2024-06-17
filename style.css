@@ -716,6 +716,14 @@ hr.dotted-path-line {
   .neg-mt-70 {
     margin-top: 1rem;
   }
+  .carousel-testimonial-controls {
+    position: inherit;
+    height: 41px;
+    bottom: unset !important;
+    position: inherit;
+    left: 286px;
+    top: 397px;
+  }
 }
 
 @media (min-width: 769px) {
