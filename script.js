@@ -197,3 +197,33 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 });
+
+// Lazy load background images
+document.addEventListener("DOMContentLoaded", function () {
+  const lazyBackgrounds = document.querySelectorAll(".lazy-background");
+
+  if ("IntersectionObserver" in window) {
+    const lazyBackgroundObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const lazyBackground = entry.target;
+            lazyBackground.style.backgroundImage = `url(${lazyBackground.dataset.bg})`;
+            lazyBackground.classList.add("loaded");
+            lazyBackgroundObserver.unobserve(lazyBackground);
+          }
+        });
+      }
+    );
+
+    lazyBackgrounds.forEach((lazyBackground) => {
+      lazyBackgroundObserver.observe(lazyBackground);
+    });
+  } else {
+    // Fallback for browsers that don't support IntersectionObserver
+    lazyBackgrounds.forEach((lazyBackground) => {
+      lazyBackground.style.backgroundImage = `url(${lazyBackground.dataset.bg})`;
+      lazyBackground.classList.add("loaded");
+    });
+  }
+});

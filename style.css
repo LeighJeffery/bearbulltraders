@@ -89,6 +89,11 @@ p {
   padding-bottom: 6rem;
 }
 
+.py-13 {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
 .px-6 {
   padding-left: 6rem;
   padding-right: 6rem;
@@ -286,63 +291,15 @@ a.text-secondary:hover {
   animation: shake 0.3s ease-in-out !important;
 }
 /* ----------------------------------------------------------------------- HOME HERO */
-section.hero {
-  background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
+.lazy-background {
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-/* -------------------------------------------------------------------------- SECONDARY PAGE HEROS */
-section.chatroom-hero {
-  background-image: url("/images/backgrounds/Hero-4.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-section.technology-hero {
-  background-image: url("/images/backgrounds/Hero-tech.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-section.education-hero {
-  background-image: url("/images/backgrounds/Hero-edu.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-section.webinar-hero {
-  background-image: url("/images/backgrounds/Hero-6.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-section.psychology-hero {
-  background-image: url("/images/backgrounds/Hero-1.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-section.testimonials-hero {
-  background-image: url("/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-/* -------------------------------------------------------------------------- FOOTER */
-.footer-top-img {
-  background-image: url(/images/backgrounds/summit-vancouver_2.webp);
-  background-size: cover;
-  padding: 15rem 0;
-  height: 100%;
   background-position: center;
+  background-attachment: scroll;
+  height: 100%;
+}
+.lazy-background.loaded {
+  transition: background 0.5s ease-in-out;
 }
 
 /*---------------------------------------------------------------------------- CAROUSELS */
@@ -739,6 +696,10 @@ hr.dotted-path-line {
 
   iframe {
     max-width: fit-content;
+  }
+  .py-13 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
 }
 
