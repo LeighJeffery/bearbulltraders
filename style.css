@@ -589,16 +589,19 @@ hr.dotted-path-line {
 }
 
 /* -------------------------------------------------------------------------------------- GDPR POP */
-.gdpr-popup {
+
+.cookie-popup {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: rgb(151, 30, 30);
-  border: 1px solid #dee2e6;
-  padding: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: 400px;
+  background-color: rgb(255 255 255);
+  color: rgb(0, 0, 0);
+  padding: 30px 30px;
   display: none;
   z-index: 1000;
+  box-shadow: #00000052 0 0 11px;
 }
 
 /* ----------------------------------------------------------------------------------------- BACK TO TOP */

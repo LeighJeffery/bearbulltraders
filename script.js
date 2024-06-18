@@ -98,13 +98,6 @@ fetch("newsletter-form.html")
     document.getElementById("home-hero-form").innerHTML = data;
   });
 
-// Fetch and insert GDPR POP
-fetch("cookie-pop.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("gpdr-pop").innerHTML = data;
-  });
-
 // Function to initialize accordion functionality
 function initializeAccordion() {
   // table accordions //
@@ -160,16 +153,47 @@ window.onscroll = function () {
   scrollFunction();
 };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+// Cookie POP-up and include
+document.addEventListener("DOMContentLoaded", function () {
+  // Fetch and insert Cookie-pop HTML
+  fetch("cookie-pop.html")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.text();
+    })
+    .then((data) => {
+      document.getElementById("gpdr-pop").innerHTML = data;
+      initializeCookiePopup(); // Call the function to initialize event listeners
+    })
+    .catch((error) => {
+      console.error("Failed to fetch cookie-pop.html:", error);
+    });
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+  function initializeCookiePopup() {
+    // Check if the user has already accepted cookies during this session
+    if (!localStorage.getItem("cookieConsent")) {
+      // If not, display the cookie popup
+      document.getElementById("cookie-popup").style.display = "block";
+    }
+
+    // Handle the "Accept All Cookies" button click
+    document
+      .getElementById("accept-cookies")
+      .addEventListener("click", function () {
+        // Set a flag in localStorage indicating that the user has accepted cookies
+        localStorage.setItem("cookieConsent", "true");
+        // Hide the cookie popup
+        document.getElementById("cookie-popup").style.display = "none";
+      });
+
+    // Handle the "Leave Site" button click
+    document
+      .getElementById("leave-site")
+      .addEventListener("click", function () {
+        // Redirect the user to another site
+        window.location.href = "https://www.google.com";
+      });
+  }
+});
