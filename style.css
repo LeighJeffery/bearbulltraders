@@ -617,6 +617,77 @@ hr.dotted-path-line {
   transition: transform 0.3s ease-in-out;
 }
 
+/* --------------------------------------------------------------------------------------- FORMS */
+label._form-label {
+  display: none !important;
+}
+
+._button-wrapper {
+  margin: 0px 12.5px 0 10px !important;
+}
+
+._submit {
+  margin-top: 0 !important;
+  font-size: 16px !important;
+}
+
+button#_form_61_submit {
+  padding: 14px 4px !important;
+}
+
+._form_element {
+  margin-bottom: 0 !important;
+}
+
+._inline-style input[type="text"] {
+  width: 529px !important;
+  padding: 15px 12px !important;
+}
+
+._form-thank-you {
+  background: white !important;
+  padding: 20px !important;
+  border-radius: 5px !important;
+}
+
+._form-content {
+  display: flex !important;
+  align-items: center !important;
+}
+
+button#_form_47_submit {
+  padding: 14px 20px !important;
+}
+
+button#_form_61_submit:hover {
+  background-color: #cb0000 !important;
+}
+
+button#_form_11_submit:hover {
+  background-color: #3e3e3e !important;
+}
+
+button#_form_47_submit:hover {
+  background-color: #cb0000 !important;
+}
+
+._form_11 {
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-left: -56px !important;
+}
+
+._form_11 #fullname {
+  width: 250px !important;
+  border-radius: 5px !important;
+  margin: 0 !important;
+}
+
+._form_11 input#email {
+  width: 250px !important;
+  padding: 12px !important;
+}
+
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
 @media (min-width: 2300px) {
   .container-inner {

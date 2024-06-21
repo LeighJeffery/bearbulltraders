@@ -81,6 +81,12 @@ fetch("newsletter-cta.html")
   .then((response) => response.text())
   .then((data) => {
     document.getElementById("newsletter").innerHTML = data;
+
+    // Execute the script after inserting the HTML
+    const script = document.createElement("script");
+    script.src = "https://bearbulltraders.activehosted.com/f/embed.php?id=47";
+    script.charset = "utf-8";
+    document.getElementById("newsletter").appendChild(script);
   });
 
 // Fetch and insert compare chart section
