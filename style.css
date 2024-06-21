@@ -709,6 +709,14 @@ button#_form_47_submit:hover {
   hr.dotted-path-line {
     display: none;
   }
+  ._form-content {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+  input#email {
+    width: 100%;
+    max-width: 200px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -755,9 +763,19 @@ button#_form_47_submit:hover {
     left: 286px;
     top: 397px;
   }
-}
 
-@media (min-width: 769px) {
+  ._form-content {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+
+  ._inline-style input[type="text"] {
+    width: 100% !important;
+    max-width: 529px !important;
+  }
+  ._submit {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 768px) {
