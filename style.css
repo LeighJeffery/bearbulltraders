@@ -641,7 +641,7 @@ button#_form_61_submit {
 
 ._inline-style input[type="text"] {
   width: 529px !important;
-  padding: 15px 12px !important;
+  padding: 13px 12px !important;
 }
 
 ._form-thank-you {
@@ -686,6 +686,13 @@ button#_form_47_submit:hover {
 ._form_11 input#email {
   width: 250px !important;
   padding: 12px !important;
+}
+
+button#_form_61_submit {
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.09rem !important;
+  padding: 14px 24px !important;
 }
 
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
