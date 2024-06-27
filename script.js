@@ -246,3 +246,16 @@ mybutton.addEventListener("click", function () {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
+// Auto play video on membership-levels.html//
+var videoModal = document.getElementById("videoModal");
+var videoIframe = document.getElementById("videoIframe");
+var videoSrc = videoIframe.src;
+
+videoModal.addEventListener("shown.bs.modal", function () {
+  videoIframe.src = videoSrc + "?autoplay=1";
+});
+
+videoModal.addEventListener("hidden.bs.modal", function () {
+  videoIframe.src = "";
+});

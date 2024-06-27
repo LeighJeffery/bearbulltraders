@@ -48,21 +48,40 @@
 
             <div class="col-xl-6">
               <img
-                src="/images/photos/bear bull traders live trading summit.jpg"
-                alt="live summit"
-                class="w-100 h-75 object-fit-cover"
+                src="/images/photos/bear-bull-traders-live-trading-summit.png"
+                class="thumbnail w-100"
+                alt="Click to play video"
+                data-bs-toggle="modal"
+                data-bs-target="#videoModal"
+                type="button"
               />
+            </div>
 
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/I28ILuII6og?si=SF1y3_TMeXW3ajGa"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+            <!-- Modal structure -->
+            <div
+              class="modal fade"
+              id="videoModal"
+              tabindex="-1"
+              aria-labelledby="videoModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content fit-content">
+                  <div class="modal-body">
+                    <iframe
+                      id="videoIframe"
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/I28ILuII6og"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -76,7 +95,7 @@
         <div id="compare-chart"></div>
       </div>
 
-      <section id="what-you-get py-6">
+      <section id="what-you-get" class="py-6">
         <div class="container-inner row text-center pb-4">
           <h2 class="text-lt-black fw-bold text-center mb-2">
             What You Will Get
@@ -209,7 +228,7 @@
                       aria-expanded="false"
                       aria-controls="flush-collapseOne"
                     >
-                      What does the chatroom offer to traders?
+                      What education services are offered by BBT?
                     </button>
                   </h2>
                   <div
@@ -218,12 +237,14 @@
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      In the chatroom, traders can ask questions, discuss
-                      current market conditions, and interact with other traders
-                      in a friendly environment. You can watch Andrew and Brian
-                      trading at the market open, real-time, with other
-                      moderators sharing their trades, reasoning, and strategies
-                      throughout the day.
+                      BBT offers a range of day trading education services,
+                      including live onboarding sessions, 24/7 access to
+                      recorded online courses covering technical analysis, price
+                      action, day trading strategies, and trading psychology.
+                      Additionally, our weekly live webinars delve into both
+                      psychological and technical aspects of trading. These
+                      services are tailored to provide a comprehensive learning
+                      experience for traders at various skill levels.
                     </div>
                   </div>
                 </div>
@@ -237,7 +258,7 @@
                       aria-expanded="false"
                       aria-controls="flush-collapseTwo"
                     >
-                      What is the schedule for the BBT Chatroom?
+                      What type of trading does BBT education focus on?
                     </button>
                   </h2>
                   <div
@@ -246,11 +267,10 @@
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      The BBT chatroom follows a schedule that aligns with the
-                      NYSE trading days. It opens at 8 am and concludes at 4 pm,
-                      coinciding with the market close. The chatroom operates
-                      from Monday to Friday, and it observes NYSE trading days
-                      and holidays.
+                      BBT's education primarily focuses on day trading options
+                      and stocks. While some moderators engage in swing trading
+                      or trade futures, the core emphasis of the education
+                      resources is on stocks and options trading.
                     </div>
                   </div>
                 </div>
@@ -265,7 +285,7 @@
                       aria-expanded="false"
                       aria-controls="flush-collapseThree"
                     >
-                      How can I access the chatroom?
+                      What markets does BBT focus on?
                     </button>
                   </h2>
                   <div
@@ -274,12 +294,12 @@
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      You can access the chatrooms through a web browser like
-                      Google Chrome or Mozilla Firefox on your computer. If
-                      you're using an iOS device like an iPhone or iPad, use
-                      Safari, and for Android devices, use Firefox.
-                      Alternatively, you can use a mobile app to access the
-                      chatroom.
+                      BBT concentrates on the US markets, specifically stocks
+                      and options. Although the technical analysis, price
+                      action, indicators, and day trading strategies taught
+                      apply to other markets, the emphasis on the US market is
+                      due to its high volume and volatility, which are essential
+                      for day trading.
                     </div>
                   </div>
                 </div>
@@ -294,7 +314,7 @@
                       aria-expanded="false"
                       aria-controls="flush-collapseFour"
                     >
-                      Which membership level provides access to the chatroom?
+                      What is the onboarding session?
                     </button>
                   </h2>
                   <div
@@ -303,9 +323,76 @@
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div class="accordion-body">
-                      All membership levels grant access to the chatroom.
-                      Additionally, you can experience our chatroom with a 7-day
-                      trial through the Intro membership.
+                      The onboarding session is designed to assist new members
+                      in becoming familiar with the community and its resources.
+                      It offers guidance on how to effectively use these
+                      resources to enhance their trading skills. The session
+                      covers an overview of community chatrooms, educational
+                      resources, tools, and features available to members. This
+                      session allows new members to ask questions and receive
+                      guidance from experienced traders and moderators.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item py-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-bolder"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseFive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseFive"
+                    >
+                      Is it possible to learn day trading while having a job?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Yes, it is possible to learn day trading while holding a
+                      job. The learning curve can be challenging, especially if
+                      the U.S. market opens during your work hours. However, you
+                      can study and practice day trading techniques using a
+                      replay simulator, refining your skills. Over time, you can
+                      gradually transition towards becoming a full-time trader
+                      in the future. Consistency and dedication to learning are
+                      crucial on this journey.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item py-3">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed fw-bolder"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseSix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseSix"
+                    >
+                      Do you offer a trial to test the BBT education services?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseSix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Yes, Bear Bull Traders provides the Intro Membership, a
+                      7-day trial that includes access to the Chatroom, Day
+                      Trading & Options Courses, and the live Monday Onboarding
+                      Class. This trial allows you to experience the community
+                      and determine if it aligns with your needs. If you find
+                      value and believe the community can support your trading
+                      growth, you can then choose to join Bear Bull Traders with
+                      a monthly or annual plan.
                     </div>
                   </div>
                 </div>
