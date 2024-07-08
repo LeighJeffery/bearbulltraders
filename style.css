@@ -294,7 +294,7 @@ a.text-secondary:hover {
 .shake:hover {
   animation: shake 0.3s ease-in-out !important;
 }
-/* ----------------------------------------------------------------------- HOME HERO */
+/* ----------------------------------------------------------------------- LAZY BACKGROUND */
 .lazy-background {
   background-size: cover;
   background-repeat: no-repeat;
@@ -304,6 +304,17 @@ a.text-secondary:hover {
 }
 .lazy-background.loaded {
   transition: background 0.5s ease-in-out;
+}
+
+/* ----------------------------------------------------------------------------- HERO */
+.hero.background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  height: 100%;
+  transition: background 0.5s ease-in-out;
+  background-image: url(/images/backgrounds/large_group_nyc_bearbulltraders_bw-overlay.webp);
 }
 
 /*---------------------------------------------------------------------------- CAROUSELS */
@@ -337,7 +348,7 @@ button.carousel-control-prev {
 
 /* ----------------------------------------------------------------------------- MENTORS */
 section.mentors {
-  background-image: url("/images/backgrounds/group-background_-_.png");
+  background-image: url("/images/backgrounds/group-background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
