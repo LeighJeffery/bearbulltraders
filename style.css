@@ -186,6 +186,7 @@ a.text-secondary:hover {
 .text-lt-black {
   color: #303030;
 }
+
 .wrapper {
   max-width: 54vw !important;
   width: 100%;
@@ -204,6 +205,10 @@ a.text-secondary:hover {
 
 .fs-icon-lrg {
   font-size: 51px !important;
+}
+
+.fs-icon-super-lg {
+  font-size: 100px !important;
 }
 
 .thumbnail {
@@ -294,6 +299,16 @@ a.text-secondary:hover {
 .shake:hover {
   animation: shake 0.3s ease-in-out !important;
 }
+
+.zoom {
+  overflow: hidden;
+}
+
+.zoom:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
 /* ----------------------------------------------------------------------- LAZY BACKGROUND */
 .lazy-background {
   background-size: cover;
