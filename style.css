@@ -309,6 +309,35 @@ a.text-secondary:hover {
   transition: transform 0.3s ease-in-out;
 }
 
+.shine-container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-container img {
+  display: block;
+  width: 100%; /* Ensures the image takes up the full width of the container */
+  height: auto; /* Maintains the image's aspect ratio */
+}
+
+.shine-container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: none;
+}
+
+.shine-container:hover:after {
+  width: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.4s ease-in-out;
+}
+
 /* ----------------------------------------------------------------------- LAZY BACKGROUND */
 .lazy-background {
   background-size: cover;
@@ -816,10 +845,6 @@ button#_form_61_submit {
 }
 
 @media (max-width: 768px) {
-  .py-6 {
-    padding: 2rem 0 2rem 0;
-  }
-
   iframe {
     max-width: fit-content;
   }
