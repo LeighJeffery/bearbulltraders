@@ -130,6 +130,10 @@ a.text-secondary:hover {
   background: #9a1e21;
 }
 
+.bg-transpar {
+  background-color: transparent !important;
+}
+
 .fs-small {
   font-size: 13px;
 }
@@ -171,12 +175,20 @@ a.text-secondary:hover {
   font-size: 15px;
 }
 
+.fs-lrg {
+  font-size: 3rem;
+}
+
 .ls-1 {
   letter-spacing: 0.05rem;
 }
 
 .gap-1 {
   grid-gap: 0.25rem !important;
+}
+
+.gap-10 {
+  grid-gap: 10rem;
 }
 
 .bg-lt-black {
@@ -249,10 +261,6 @@ a.text-secondary:hover {
   object-fit: cover;
 }
 
-.neg-mt-70 {
-  margin-top: -70px;
-}
-
 .fs-mini {
   font-size: 13px;
 }
@@ -265,6 +273,9 @@ a.text-secondary:hover {
   height: 318px;
 }
 
+.g-6 {
+  gap: 5rem;
+}
 .g-10 {
   gap: 10rem;
 }
@@ -338,6 +349,14 @@ a.text-secondary:hover {
   transition: all 0.4s ease-in-out;
 }
 
+.mt-neg-5 {
+  margin-top: -4rem;
+}
+
+.container-wide {
+  max-width: 1500px !important;
+}
+
 /* ----------------------------------------------------------------------- LAZY BACKGROUND */
 .lazy-background {
   background-size: cover;
@@ -390,6 +409,26 @@ button.carousel-control-prev {
   gap: 10px;
 }
 
+/*------------------------------------------------------------------------------- COUNT DOWN TIMER */
+.countdown-item {
+  background-color: transparent;
+  color: #fff;
+}
+
+.countdown-value {
+  font-size: 2em;
+}
+
+.countdown-label {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.countdown-warpper {
+  max-width: 425px;
+}
+
 /* ----------------------------------------------------------------------------- MENTORS */
 section.mentors {
   background-image: url("/images/backgrounds/group-background.webp");
@@ -398,6 +437,27 @@ section.mentors {
   background-attachment: scroll;
 }
 
+/* ------------------------------------------------------------------------------- GIFTS */
+.gifts-hero {
+  background-image: url("/images/backgrounds/group-background.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* ------------------------------------------------------------------------------- WORKSHOP */
+.workshop-hero {
+  background-image: url("/images/backgrounds/workhop-hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.mod-workshop-position {
+  left: 36px;
+  right: 36px;
+  bottom: 5px;
+}
 /* ------------------------------------------------------------------------------- PRICE CHART */
 .bi-check-lg::before,
 .bi-x::before {
@@ -808,6 +868,16 @@ button#_form_61_submit {
   }
   .h-800 {
     height: fit-content;
+  }
+}
+
+@media (min-width: 992px) {
+  .mt-lg-neg-5 {
+    margin-top: -70px !important;
+  }
+
+  .g-lg-6 {
+    gap: 6rem;
   }
 }
 
