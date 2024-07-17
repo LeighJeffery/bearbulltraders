@@ -357,6 +357,10 @@ a.text-secondary:hover {
   max-width: 1500px !important;
 }
 
+.text-999 {
+  color: #999;
+}
+
 /* ----------------------------------------------------------------------- LAZY BACKGROUND */
 .lazy-background {
   background-size: cover;
@@ -458,6 +462,107 @@ section.mentors {
   right: 36px;
   bottom: 5px;
 }
+
+/* -------------------------------------------------------------- TABS & WORKSHOP SCHEDULE*/
+.bbt-seminar-schedule-menu-container.workshop-schedule {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 27% 70%;
+  align-items: flex-start;
+}
+
+.bbt-seminar-schedule-menu-container table td {
+  padding: 32px 0 32px;
+}
+
+.bbt-seminar-schedule-menu-container table.sem-schedule-table {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+.btn-stacked-side {
+  display: flex;
+  font-size: 18px;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #666;
+}
+
+button.seminar-schedule-menu-btn {
+  text-align: left;
+  font-size: 64px;
+  border: none;
+  font-family: "brother-1816";
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+}
+
+button.seminar-schedule-menu-btn:hover:after,
+button.seminar-schedule-menu-btn:focus:after,
+button.seminar-schedule-menu-btn:active:after {
+  position: absolute;
+  background: #bb1115;
+  height: 100%;
+  content: "";
+  bottom: -4px;
+  left: -10px;
+  width: 3px;
+}
+
+button.seminar-schedule-menu-btn.tablink:hover,
+button.seminar-schedule-menu-btn.tablink:active,
+button.seminar-schedule-menu-btn.tablink:focus {
+  color: #bb1115;
+}
+
+.bbt-seminar-schedule-menu {
+  display: flex;
+  grid-gap: 3rem;
+  flex-direction: column;
+}
+
+.bbt-seminar-schedule-menu-container td.bbt-sem-sched-title {
+  text-transform: capitalize;
+  font-size: 16.64px;
+  margin-bottom: 1rem;
+  text-align: left;
+  line-height: 1.8rem;
+  font-weight: 500;
+}
+
+li.sem-schedule-title {
+  list-style: none;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 800;
+}
+
+.bbt-seminar-schedule-menu-container tr {
+  border-bottom: 1px solid grey;
+}
+
+.bbt-seminar-schedule-menu-container td.bbt-sem-schedu-time {
+  text-align: left;
+  color: grey;
+  letter-spacing: 0;
+  font-weight: 200;
+}
+
+span.bbt-table-strategy {
+  color: #9a1e21;
+  font-weight: 700;
+}
+
+.w3-red {
+  color: #bb1115;
+}
+
 /* ------------------------------------------------------------------------------- PRICE CHART */
 .bi-check-lg::before,
 .bi-x::before {
