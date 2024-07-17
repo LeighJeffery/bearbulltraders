@@ -919,6 +919,11 @@ button#_form_61_submit {
   padding: 14px 24px !important;
 }
 
+/* --------------------------------------------------------------------------------------  HIDE */
+.container-fluid.audiobooks-pg .box-title.text-center.pb-3 {
+  display: none;
+}
+
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
 @media (min-width: 2300px) {
   .container-inner {
