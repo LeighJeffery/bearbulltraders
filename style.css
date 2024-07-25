@@ -332,8 +332,8 @@ a.text-secondary:hover {
 
 .shine-container img {
   display: block;
-  width: 100%; /* Ensures the image takes up the full width of the container */
-  height: auto; /* Maintains the image's aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
 .shine-container:after {
@@ -397,6 +397,18 @@ a.text-secondary:hover {
   height: 100%;
   transition: background 0.5s ease-in-out;
   background-image: url(/images/backgrounds/Hero-edu.webp);
+}
+
+/* ----------------------------------------------------------------------------- PIVOT BOOK*/
+.pivotbook-hero {
+  margin-top: 50px !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: scroll;
+  height: 100%;
+  transition: background 0.5s ease-in-out;
+  background-image: url(/images/backgrounds/thor-background_pivotbook-2.webp);
 }
 
 /*---------------------------------------------------------------------------- CAROUSELS */
@@ -935,7 +947,7 @@ button#_form_61_submit {
 }
 
 /* --------------------------------------------------------------------------------------  HIDE */
-.container-fluid.audiobooks-pg .box-title.text-center.pb-3 {
+.audiobooks-pg .box-title {
   display: none;
 }
 
