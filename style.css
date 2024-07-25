@@ -138,6 +138,10 @@ a.text-secondary:hover {
   font-size: 13px;
 }
 
+.mt-ng-4 {
+  margin-top: -4rem;
+}
+
 .text-bbt-red {
   color: #9a1e21;
 }
