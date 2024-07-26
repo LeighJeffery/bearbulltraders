@@ -569,9 +569,9 @@ li.sem-schedule-title {
   font-weight: 800;
 }
 
-.bbt-seminar-schedule-menu-container tr {
+/* .bbt-seminar-schedule-menu-container tr {
   border-bottom: 1px solid grey;
-}
+} */
 
 .bbt-seminar-schedule-menu-container td.bbt-sem-schedu-time {
   text-align: left;
