@@ -183,6 +183,10 @@ a.text-secondary:hover {
   font-size: 3rem;
 }
 
+.small-title {
+  font-size: 61px;
+}
+
 .ls-1 {
   letter-spacing: 0.05rem;
 }
@@ -462,14 +466,6 @@ button.carousel-control-prev {
 
 /* ----------------------------------------------------------------------------- MENTORS */
 section.mentors {
-  background-image: url("/images/backgrounds/group-background.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-}
-
-/* ------------------------------------------------------------------------------- GIFTS */
-.gifts-hero {
   background-image: url("/images/backgrounds/group-background.webp");
   background-size: cover;
   background-repeat: no-repeat;

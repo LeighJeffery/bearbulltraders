@@ -55,13 +55,6 @@ fetch("/modules/compare.html")
     document.getElementById("compare").innerHTML = data;
   });
 
-// Fetch and insert community carousels section
-fetch("/modules/community-carousels.html")
-  .then((response) => response.text())
-  .then((data) => {
-    document.getElementById("community-carousels").innerHTML = data;
-  });
-
 // Fetch and insert books row section
 fetch("/modules/books-row.html")
   .then((response) => response.text())
