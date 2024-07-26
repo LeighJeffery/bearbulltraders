@@ -125,6 +125,9 @@ a.text-secondary:hover {
 }
 
 /* ----------------------------------------------------------------------- HELPERS */
+.col-12.text-center.neg-mt-70 {
+  margin-top: -70px;
+}
 
 .bg-bbt-red {
   background: #9a1e21;
