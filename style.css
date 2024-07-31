@@ -979,6 +979,9 @@ button#_form_61_submit {
     width: 100%;
     max-width: 200px;
   }
+  ._form {
+    padding: 0 0 18px 0 !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -988,6 +991,12 @@ button#_form_61_submit {
 
   .w-xl-75 {
     width: 70% !important;
+  }
+}
+
+@media (max-width: 1228px) {
+  .mentor-images img {
+    width: 111px;
   }
 }
 
@@ -1058,6 +1067,9 @@ button#_form_61_submit {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+  #backToTopBtn {
+    right: 0px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1068,5 +1080,23 @@ button#_form_61_submit {
     width: 250px;
     height: 250px;
     object-fit: cover;
+  }
+  .mentor-images img {
+    width: 61px;
+  }
+
+  .container-inner {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .book-row-item {
+    height: 162px;
+  }
+}
+
+@media (min-width: 576px) {
+  .w-sm-100 {
+    width: fit-content !important;
   }
 }
