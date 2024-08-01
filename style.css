@@ -950,7 +950,10 @@ button#_form_61_submit {
   display: none;
 }
 
+/* ----------------------------------------------------------------------------------------- TABLE COLUMNS */
+
 /* ---------------------------------------------------------------------------------------  MEDIA QUERIES */
+
 @media (min-width: 2300px) {
   .container-inner {
     max-width: 60vw;
@@ -959,7 +962,6 @@ button#_form_61_submit {
 
 @media (max-width: 1700px) {
   .container-inner {
-    max-width: 100vw;
   }
 
   .wrapper {
@@ -1086,8 +1088,9 @@ button#_form_61_submit {
   }
 
   .container-inner {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100vw;
   }
 
   .book-row-item {
