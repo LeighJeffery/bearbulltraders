@@ -94,11 +94,6 @@ p {
   padding-bottom: 13rem;
 }
 
-.px-6 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
-
 .btn-outline-primary {
   border-color: #9a1e21;
   color: white;
@@ -795,6 +790,10 @@ hr.dotted-path-line {
   max-width: 1226px;
 }
 
+.brian-newsletter-padding {
+  padding-left: 16.8rem !important;
+}
+
 /* -------------------------------------------------------------------------------------- GDPR POP */
 
 .cookie-popup {
@@ -1072,6 +1071,9 @@ button#_form_61_submit {
   #backToTopBtn {
     right: 0px;
   }
+  ._form_11 {
+    margin-left: 0px !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1101,5 +1103,9 @@ button#_form_61_submit {
 @media (min-width: 576px) {
   .w-sm-100 {
     width: fit-content !important;
+  }
+  .px-sm-6 {
+    padding-left: 6rem !important;
+    padding-right: 6rem !important;
   }
 }
